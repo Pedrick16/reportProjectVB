@@ -22,7 +22,6 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TXTSite = New System.Windows.Forms.TextBox()
         Me.TXTEmp = New System.Windows.Forms.TextBox()
@@ -32,20 +31,11 @@ Partial Class Form1
         CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'ReportViewer1
-        '
-        Me.ReportViewer1.Location = New System.Drawing.Point(12, 151)
-        Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.ServerReport.BearerToken = Nothing
-        Me.ReportViewer1.ServerReport.ReportServerUrl = New System.Uri("", System.UriKind.Relative)
-        Me.ReportViewer1.Size = New System.Drawing.Size(775, 341)
-        Me.ReportViewer1.TabIndex = 0
-        '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(72, 97)
+        Me.Button1.Location = New System.Drawing.Point(68, 97)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(96, 24)
+        Me.Button1.Size = New System.Drawing.Size(111, 37)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
@@ -97,7 +87,6 @@ Partial Class Form1
         Me.Controls.Add(Me.TXTEmp)
         Me.Controls.Add(Me.TXTSite)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ReportViewer1)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -105,8 +94,6 @@ Partial Class Form1
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents Button1 As Button
     Friend WithEvents TXTSite As TextBox
     Friend WithEvents TXTEmp As TextBox
